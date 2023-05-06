@@ -1,0 +1,906 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <meta name="author" content="Rithwik Amaraneni">
+        <meta name="description" content="This is a portfolio. This describes about me">
+        <meta name="keywords" content="rithwik,rithwik amaraneni,rithwik003,amaraneni,rithwik vit,rithwik cse">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+        <link type="image/png" size="32x32" rel="icon" href="">
+        <link rel="stylesheet" href="https://leetcode.com/static/cdn/font_1527/css/leetcode.min.css">
+        <link rel="stylesheet" href="font-awesome.min.css">
+        <link rel="stylesheet" href="https://leetcode.com/static/cdn/font_1527/css/leetcode.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9X9hhrzZXoyWdiE8Hjk7YXdY+p/WnKOgVWqy8b2tV9r5rFvRStWceZ8Alywo7HcGJvMak+qO1tQb1rxr9Py5oA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin:0;
+                background-color:rgb(255, 255, 255);
+                max-width:100%;
+                transition:transform .3s;
+            }
+            
+            .home,.about, .work,.skill,.contact,.resume,.name{
+                text-decoration: none;
+                text-align: center;
+                float:left;
+                width:10%;
+                font-size:25px;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:10px;
+                padding-right:10px;
+                background-color:rgb(65, 116, 116);
+                color:white;
+                transition:transform .5s;
+            }
+            .home,.about, .work,.skill,.contact,.resume{
+                cursor: pointer;
+            }
+            .home:hover,.about:hover, .work:hover,.skill:hover,.contact:hover,.resume:hover,.home:active,.about:active, .work:active,.skill:active,.contact:active,.resume:active{
+                color:#eb4444;
+                
+            }
+            .nav a:hover {
+                border-bottom: 3px solid red;
+                
+            }
+
+            .nav a:active {
+                border-bottom: 3px solid red;
+            }
+            
+            .name{
+                padding-left:195px;
+                padding-right:64px;
+                margin-right:0;
+                color:#d2fd15;
+            }
+            .nav{
+                width:100%;
+                position: fixed;
+                top:0;
+                z-index:1;
+                overflow:auto;
+            }
+            .typewriter{
+                justify-content: center;
+                align-items: center;
+                margin-top: 15%;
+                width:50%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                float:left;
+                border-radius:30px;
+                background-color:rgb(65, 116, 116);
+                text-align:center;
+                font-size:25px;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:10px;
+                padding-right:10px;
+                margin-left:15px;
+                color: #fff;
+                text-shadow:
+                    0 0 7px #e6d55c,
+                    0 0 14px #e6d55c,
+                    0 0 21px rgb(65, 116, 116),
+                    0 0 44px rgb(65, 116, 116),
+                    0 0 82px rgb(65, 116, 116),
+                    0 0 92px rgb(65, 116, 116),
+                    0 0 104px rgb(65, 116, 116);
+            }
+            .a3{
+                color: #fff;
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #f97399,
+                    0 0 80px #f97399,
+                    0 0 90px #f97399,
+                    0 0 100px #f97399,
+                    0 0 150px #f97399;
+            }
+            #i1{
+                width:40%;
+                margin-top:15%;
+                margin-right:25px;
+               float:right;
+               transition:transform .2s;
+            }
+            #i1:hover{
+                transform:scale(1.1);
+            }
+            
+            
+            .typewriter p {
+            font-size: 2rem;
+            padding: 0.5rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            overflow: hidden;
+            }
+            .typewriter p span.typed-text {
+            font-weight: normal;
+            color: #eb4444;
+            }
+            .typewriter p span.cursor {
+            display: inline-block;
+            background-color: #ccc;
+            margin-left: 0.1rem;
+            width: 3px;
+            animation: blink 1s infinite;
+            }
+            .typewriter p span.cursor.typing {
+            animation: none;
+            }
+            @keyframes blink {
+            0%  { background-color: #ccc; }
+            49% { background-color: #ccc; }
+            50% { background-color: transparent; }
+            99% { background-color: transparent; }
+            100%  { background-color: #ccc; }
+            }
+
+            .ab1{
+                float:right;
+                color:white;
+                font-size:30px;
+                border-radius:25px;
+                width:50%;
+                background:linear-gradient(330deg, rgb(84, 211, 211) 0%, rgb(194, 151, 96) 100%);
+                margin-top:14%;
+                margin-right:3%;
+                padding-top:3%;
+                padding-bottom:3%;
+                padding-left:5%;
+                padding-right:2%;
+                text-shadow:
+                    0 0 7px #d6cc80,
+                    0 0 14px #e7dc89
+                    ;
+            }
+
+            
+                        
+            
+
+            @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+            
+            .h2,.h3,.h4{
+                float:left;
+                margin-left:15%;
+                margin-right:70%;
+                margin-top:12%;
+                color:rgb(62, 129, 111);
+                font-size:40px;
+                text-shadow:
+                    0 0 4px #5b5b5b,
+                    0 0 11px #ffffff,
+                    0 0 19px #ffffff,
+                    0 0 40px #ffffff,
+                    0 0 80px #ffffff,
+                    0 0 90px #ffffff,
+                    0 0 100px #ffffff,
+                    0 0 150px #ffffff;
+
+                    font-family: 'Alfa Slab One', cursive;
+                    
+            }
+            
+            .ab2{
+                margin-top:5%;
+                margin-left:8%;
+                width:20%;
+                border-radius:120px;
+                border-width: thick;
+                border-color:#fff;
+                box-shadow: 0 0 7px #fff,
+                            0 0 10px #3b8e6e,
+                            0 0 21px #3b8e6e,
+                            0 0 42px #3b8e6e;
+                            
+                             
+                cursor:pointer; 
+                transition: transform .3s;
+            }
+            .ab2:hover{
+                transform:scale(1.2) rotate(360deg);
+                border-color:#fff;
+                box-shadow: 0 0 7px #fff,
+                            0 0 10px #fff,
+                            0 0 21px #379fd4,
+                            0 0 42px #379fd4,
+                            0 0 82px #379fd4;
+                            
+            }
+            .c1{
+                float:left;
+                width:30%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:15px;
+                margin-left:6%;
+                background:linear-gradient(330deg,  rgb(186, 208, 111) 0%,rgb(159, 196, 184) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .c2{
+                float:right;
+                width:30%;
+                margin-right:10%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:15px;
+                margin-left:50px;
+                background:linear-gradient(310deg, rgb(186, 208, 111) 0%,rgb(159, 196, 184) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .c3{
+                margin-top:7%;
+                float:right;
+                width:30%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:15px;
+                margin-right:10%;
+                
+                background:linear-gradient(300deg, rgb(186, 208, 111) 0%,rgb(159, 196, 184) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .c4{
+                margin-top:5%;
+                float:left;
+                width:30%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                border-radius:15px;
+                margin-left:6%;
+                
+                background:linear-gradient(300deg, rgb(186, 208, 111) 0%,rgb(159, 196, 184) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .c1:hover,.c2:hover,.c3:hover,.c4:hover{
+                transform:scale(1.2);
+            }
+
+            .s1{
+                
+                margin-right:50%;
+                margin-top:20%;
+                color:rgb(65, 116, 116);
+                font-size:30px;
+                cursor: pointer; 
+                transition: transform .3s;   
+                
+            }
+            .s7{
+                margin-right:50%;
+                margin-top:8%;
+                color:rgb(65, 116, 116);
+                font-size:30px;
+                cursor: pointer;
+                transition: transform .3s;  
+                padding-left:15px;
+                
+            }
+            .s13{
+                
+               
+                margin-right:50%;
+                margin-top:8%;
+                color:rgb(65, 116, 116);
+                font-size:30px;
+                cursor: pointer; 
+                transition: transform .3s;
+            }
+    
+            
+            
+            .ad1{
+                width:40%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                float:left;
+                border-radius:15px;
+                margin-left:50px;
+                background:linear-gradient(310deg, rgb(176, 172, 215) 0%,rgb(240, 149, 177) 100%);
+                font-size:20px;
+                transition: transform .3s;
+
+            }
+            .ad1:hover,.ad2:hover,.ad3:hover,.ad4:hover,.ad5:hover{
+                transform:scale(1.1);
+            }
+            .z1{
+                text-decoration:none;
+                color:#207870;
+                font-size:30px;
+                padding-left:15px;
+                padding-right:15px;
+                padding-top:15px;
+                padding-bottom:15px;
+                text-align:center;
+            }
+            .ad2{
+                margin-top: 2%;
+                padding-left:15px;
+                padding-right:15px;
+                width:40%;
+                padding-top:20px;
+                padding-bottom:10px;
+                float:right;
+                border-radius:15px;
+                margin-right:50px;
+                background:linear-gradient(310deg, rgb(176, 172, 215) 0%,rgb(240, 149, 177) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .ad3{
+                margin-top:20%;
+                width:40%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                float:right;
+                border-radius:15px;
+                margin-right:4%;
+                background:linear-gradient(310deg, rgb(176, 172, 215) 0%,rgb(240, 149, 177) 100%);
+                font-size:20px;
+                transition: transform .3s;
+            }
+            .ad4{
+                margin-top:6%;
+                width:40%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                float:left;
+                border-radius:15px;
+                margin-left:5%;
+                background:linear-gradient(310deg, rgb(176, 172, 215) 0%,rgb(240, 149, 177) 100%);
+                font-size:20px;
+                transition: transform .3s;
+
+            }
+            .ad5{
+                margin-top:4%;
+                width:40%;
+                padding-top:20px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                float:left;
+                border-radius:15px;
+                margin-left:30%;
+                background:linear-gradient(310deg, rgb(176, 172, 215) 0%,rgb(240, 149, 177) 100%);
+                font-size:20px;
+                transition: transform .3s;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .q12,.q13{
+                border-radius:15px;
+                background-color: #207870;
+                color:white;
+                padding-left:10px;
+                padding-right:10px;
+                padding-top:10px;
+                padding-bottom:10px;
+                transition:transform .3s;
+                cursor:pointer;
+            }
+            .q12:hover,.q13:hover{
+                transform:scale(1.1);
+            }
+            .x1{
+                padding-left:20px;
+            }
+            .s2,.s3,.s4,.s5,.s6,.s12,.s8,.s9,.s10,.s11,.s14,.s15,.s16,.s17{
+                border-radius:25px;
+                padding-top:15px;
+                padding-bottom:15px;
+                padding-left:15px;
+                padding-right:15px;
+                background-color: white;
+                cursor: pointer;
+                transition: transform .3s;
+            }
+            .s2:hover,.s3:hover,.s4:hover,.s5:hover,.s6:hover,.s8:hover,.s9:hover,.s10:hover,.s11:hover,.s12:hover,.s14:hover,.s15:hover,.s16:hover,.s17:hover{
+                transform:scale(1.1);
+            }
+            .xz1{
+                font-size:22px;
+                color:#413e3e;
+                text-align:center;
+            }
+            .form{
+                float:left;
+                margin-left:20%;
+                width:50%;
+                border-radius:25px;
+                background:linear-gradient(330deg,rgb(160, 210, 187) 0%,rgb(166, 151, 191) 100%);
+                text-align:center;
+                padding-left:20px;
+                padding-right:20px;
+                padding-top:60px;
+                padding-bottom:40px;
+                font-size:25px;
+            }
+            .sub{
+                background-color: #000000;
+                color:rgb(255, 255, 255);
+                padding-top:10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .sub:hover{
+                background-color: #3b8e6e;
+                color:black;
+            }
+            #message{
+                border-color:#000000;
+                border:thick;
+                text-align: center;
+            }
+            .share {
+                width:60%;
+                color:#000000;
+                float:left;
+                font-size:50px;
+                text-decoration: none;
+                text-align: center;
+                color:#000000;
+                margin-left:17%;
+                transition:transform .3s;
+            }
+            .share .a:hover{
+                transform:scale(1.2);
+            }
+            .fa-linkedin {
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background: #007bb5;
+                color: white;
+                text-decoration: none;
+                border-radius:20px;
+                transition:transform .3s;
+            }
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-radius:20px;
+                transition:transform .3s;
+            }
+            .fa-envelope{
+                background: #55ACEE;
+                color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-radius:20px;
+                transition:transform .3s;
+            }
+            .fa-github{
+                background: black;
+                color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-radius:20px;
+                transition:transform .3s;
+            }
+            .im{
+                
+                border-radius:20px;
+                width:6.5%;
+                margin-top:5%;
+                padding-top:15px;
+                transition:transform .3s;
+            }
+            .fa-leetcode{
+                padding-top:15px;
+            }
+            
+            .im:hover,.fa-github:hover,.fa-envelope:hover,.fa-twitter:hover,.fa-linkedin:hover{
+                transform:scale(1.3);
+            }
+            .con{
+                float:left;
+                font-size:25px;
+                margin-left:40%;
+                width:50%;
+                margin-top:5%;
+            }
+            
+            
+            @media only screen and (max-width: 600px) {
+                .body{
+                    max-width: 100%;
+                }
+                .home, .about, .work, .skill, .contact, .resume,.name {
+                    font-size: 13.5px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width:7%;
+                }
+                .nav{
+                    width:100%;
+                }
+                .name {
+                    
+                    padding-left: 80px;
+                    padding-right: 32px;
+                }
+                
+                .typewriter p{
+                    text-align: center;
+                    width: 40%;
+                    margin-top: 15%;
+                    font-size: 1rem;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left: 15px;
+                    margin-right: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .content {
+                    margin-top: 100px;
+                }
+                
+                .section h1 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                
+                .section p {
+                    font-size: 16px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">  
+            <a class="home" href="#home">Home</a>
+            <a class="about" href="#h2">About</a> 
+            <a class="skill" href="#h3" >Skill</a> 
+            <a class="work" href="#h7" >Work</a> 
+            <a class="contact" href="#h8" >Contact</a> 
+            <a class="resume" href="finalresume.pdf" download target="_blank">Resume</a> 
+            <a class="name">Rithwik</a> 
+        </div>
+        <div id="home">
+            <div class="typewriter">
+                <p class="a1">Hello,</p>
+                <p class="a2"> I am Rithwik</p>
+                <!--<p class="a3">I L💖VE CODING</p>-->
+                
+                <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                <script>
+                    const typedTextSpan = document.querySelector(".typed-text");
+                    const cursorSpan = document.querySelector(".cursor");
+
+                    const textArray = ["Devel❤per", "Tech Enthusiast", "Student","Coder"];
+                    const typingDelay = 200;
+                    const erasingDelay = 100;
+                    const newTextDelay = 2000; // Delay between current and next text
+                    let textArrayIndex = 0;
+                    let charIndex = 0;
+
+                    function type() {
+                    if (charIndex < textArray[textArrayIndex].length) {
+                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, typingDelay);
+                    } 
+                    else {
+                        cursorSpan.classList.remove("typing");
+                        setTimeout(erase, newTextDelay);
+                    }
+                    }
+
+                    function erase() {
+                    if (charIndex > 0) {
+                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                        charIndex--;
+                        setTimeout(erase, erasingDelay);
+                    } 
+                    else {
+                        cursorSpan.classList.remove("typing");
+                        textArrayIndex++;
+                        if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                        setTimeout(type, typingDelay + 1100);
+                    }
+                    }
+
+                    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+                    if(textArray.length) setTimeout(type, newTextDelay + 250);
+                    });
+                </script>
+            </div>
+            <img src="gif.gif" id="i1" alt="image" >
+
+            
+        </div>
+        <div id="about">
+            
+            <div id="about1">
+                <p id="h2" class="h2"><u>About</u></p>
+                <p class="ab1"><span class="typing-effect"></span></p>
+                
+                <script>
+                   /* var text = "I am Rithwik, Third year Computer science undergraduate at VIT, Chennai. I am a coding enthusiast with strong knowledge of Data structure and algorithms, Skilled in C, C++, Java, Python, HTML, JS, Css.";
+                    var index = 0;
+                    var interval = setInterval(function() {
+                      document.querySelector('.typing-effect').textContent += text[index];
+                      index++;
+                      if (index === text.length) {
+                        clearInterval(interval);
+                      }
+                    }, 50); // Adjust the speed of typing effect by changing the number of milliseconds between each character
+*/
+                    
+                    var text = "I am Rithwik, Third year Computer science undergraduate at VIT, Chennai. I am a coding enthusiast with strong knowledge of Data structure and algorithms, Skilled in C, C++, Java, Python, HTML, JavaScript, Css, Bootstrap, php.";
+                    var index = 0;
+                    var interval;
+
+                    function startTypingEffect() {
+                    interval = setInterval(function() {
+                        document.querySelector('.ab1').textContent += text[index];
+                        index++;
+                        if (index === text.length) {
+                        clearInterval(interval);
+                        }
+                    }, 50);
+                    }
+
+                    function isElementInViewport(el) {
+                    var rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                    }
+
+                    // Start the typing effect when the "ab1" paragraph is in view
+                    document.addEventListener('scroll', function() {
+                    if (isElementInViewport(document.querySelector('.ab1'))) {
+                        startTypingEffect();
+                        // Remove event listener to prevent starting the typing effect multiple times
+                        document.removeEventListener('scroll', arguments.callee);
+                    }
+                    });
+
+
+                  </script>
+                
+
+                <img src="profile.jpg" class="ab2" alt="image">
+            </div>
+        </div>
+        <div id="skill">
+            <p id="h3" class="h3"><u>Skills</u></p>
+            
+            <p class="c1">
+                <a class="s1"><u>PROGRAMMING LANGUAGES</u></a><br><br><br>
+                <a class="s2">C</a>&nbsp;&nbsp;
+                <a class="s3">C++</a>&nbsp;&nbsp;
+                <a class="s4">Python</a><br><br><br>
+                <a class="s5">Java</a>&nbsp;&nbsp;
+                <a class="s6">Verilog</a>&nbsp;&nbsp;
+                <a class="s12">Latex</a><br><br>
+            </p>
+            
+            <p class="c2">
+                <a class="s7"><u>FRONTEND</u></a><br><br><br>
+                <a class="s8">HTML</a>&nbsp;&nbsp;
+                <a class="s9">Css</a><br><br><br>
+                <a class="s10">Bootstrap</a>&nbsp;&nbsp;
+                <a class="s11">JavaScript</a>&nbsp;&nbsp;
+                <a class="s11">PHP</a><br><br><br>
+            </p>
+            
+            <p class="c3">
+                <a class="s13"><u>TOOLS AND FRAMEWORK</u></a><br><br><br>
+                <a class="s14">Git</a>&nbsp;&nbsp;
+                <a class="s15">Github</a><br><br><br>
+                <a class="s16">Opencv</a>&nbsp;&nbsp;
+                <a class="s16">Pywhatkit</a>&nbsp;&nbsp;
+                <a class="s17">MySQL</a><br><br>
+            </p>
+            <p class="c4">
+                <a class="s13"><u>PROGRAMMING SKILLS</u></a><br><br><br>
+                <a class="s14">DSA</a>&nbsp;&nbsp;
+                <a class="s15">DBMS</a><br><br><br>
+                <a class="s16">Frontend</a>&nbsp;&nbsp;
+                <a class="s17">Backend</a><br><br>
+            </p>
+        </div>
+        <div id="work">
+            <p id="h7" class="h3"><u>Work</u></p>
+            <div class="d1">
+                
+                <p class="ad1"><a class="z1" target="_blank" href="https://github.com/rithwik003/video-background-changing-and-filtering-application">Real-time Background Changer using SelfiSegmentation </a>
+                    <br>
+                    <br>
+                    • Developed a background changer application using Python, OpenCV, and the cvzone library to remove the background from the video stream in real-time and replace it with a custom image.
+                    <br>
+                    • Utilized the SelfiSegmentation module to segment the foreground and background of the captured frames and apply the desired image as the background.
+                    <br>
+                    • Implemented keyboard controls to switch between different backgrounds and stop the execution of the program.
+                    <br>
+                    
+                    • This project has various potential applications in the current society, such as in the entertainment industry for creating virtual backgrounds in films, television, and live performances. It can also be useful in video conferencing software to enable users to change their backgrounds during virtual meetings and presentations, adding an element of personalization and professionalism. Additionally, it can be used in the gaming industry to create immersive environments and in the education sector for creating engaging and interactive virtual classrooms.
+                    <br><br>
+                    <a class="q1"><u>Technologies used:</u></a>
+                    <br><br>
+                    <a class="q12">PYTHON </a>&nbsp;&nbsp;
+                    <a class="q13">OPENCV </a>
+                    <br>
+                    <br>
+                    <p></p>
+                </p>
+                <p class="ad2"><a class="z1" target="_blank" href="https://www.hacksquad.dev/team/clash-coders-7z0CY">HACKSQUAD</a>
+                    <br>
+                    <br>
+                    <a class="x1">OPENSOURCE</a> 
+                    <br><br>
+                    <a class="x1">SEP 2022</a> 
+                    <br>
+                    <br>
+                    
+                    • Contributed to an open-source game project from the basic stage to the advanced stage using the skills I have learned.
+                    <br><br>
+                    • Enhanced the UI/UX of some Open source projects.
+                    <br><br>
+                    • My team and I worked hard to place in the top 15 teams of HackSquad 2022 by contributing to numerous open source projects. Learned many new things while working with the team.
+  
+                    <br><br>
+                    <a class="q1"><u>Technologies used:</u></a>
+                    <br><br>
+                    <a class="q12">C++</a>&nbsp;&nbsp;
+                    <a class="q13">HTML</a>&nbsp;&nbsp;
+                    <a class="q12">CSS</a>&nbsp;&nbsp;
+                    <a class="q13">JavaScript</a>
+                    <br>
+                    <br>
+                    <p></p>
+                </p>
+                <p class="ad3"><a class="z1" target="_blank" href="https://hacktoberfest.com/">HACKTOBERFEST</a>
+                    <br>
+                    <br>
+                    <a class="x1">OPENSOURCE</a> 
+                    <br><br>
+                    <a class="x1">SEP 2022</a> 
+                    <br>
+                    <br>
+                    • Demonstrated a deep passion for open-source projects by contributing to the front-end of various projects and enhancing user interfaces using HTML, CSS, and JavaScript.
+                    <br><br>
+                    • Analyzed user needs and feedback to tailor designs and improve the overall user experience, resulting in increased user engagement and satisfaction.
+                    <br><br>
+                    • Collaborated with diverse teams to implement design changes and contribute to the open-source community, exhibiting strong teamwork and communication skills.
+  
+                    <br><br>
+                    <a class="q1"><u>Technologies used:</u></a>
+                    <br><br>
+                    
+                    <a class="q13">HTML</a>&nbsp;&nbsp;
+                    <a class="q12">CSS</a>&nbsp;&nbsp;
+                    <a class="q13">JavaScript</a>
+                    <br>
+                    <br>
+                    <p></p>
+                </p>
+                <p class="ad4"><a class="z1" target="_blank" href="https://github.com/rithwik003/motion-detection">MOTION DETECTION USING OPENCV</a>
+                    <br>
+                    <br>
+                    
+                    • Developed a sophisticated motion detection project independently using OpenCV and advanced programming techniques to detect motion and notify the owner via a WhatsApp message within a minute.
+                    <br><br>
+                    • Implemented the use of threshold frames to accurately calculate motion and improve the reliability of the motion detection system, highlighting a strong understanding of computer vision principles and the ability to apply them effectively in practical applications.
+                    <br><br>
+                    • Demonstrated strong skills in computer vision, thresholding, and counters, resulting in an efficient and reliable motion detection system that maximized positive outcomes.
+                    <br><br>
+                    • Created a valuable tool that aids in real-life scenarios such as security and surveillance, showcasing a dedication to technological innovation and personal initiative.
+
+                    <br><br>
+                    <a class="q1"><u>Technologies used:</u></a>
+                    <br><br>
+                    
+                    <a class="q13">PYTHON</a>&nbsp;&nbsp;
+                    <a class="q12">OPENCV</a>&nbsp;&nbsp;
+                    <a class="q13">PYWHATKIT</a>&nbsp;&nbsp;
+                    <br>
+                    <br>
+                    <p></p>
+                </p>
+                <p class="ad5"><a class="z1" >WEBSITES DEVEL❤PED</a>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="xz1" target="_blank" href="https://rithwik003.github.io/Find-a-place.github.io/">TOURISM WEBSITE</a>
+                    <br><br>
+                    <a class="xz1" target="_blank" href="https://rithwik003.github.io/Gpa-Calculator.github.io/">GPA CALCULATOR</a>
+                    <br><br>
+                    <a class="xz1" target="_blank" href="https://rithwik003.github.io/cgpa-calculator.github.io/">CGPA CALCULATOR</a>
+                    <br><br>
+                    <a class="xz1" target="_blank" href="https://rithwik003.github.io/portfolio.github.io/">PORTFOLIO</a>
+                    
+                    <br>
+                    <br>
+                    <p></p>
+                </p>
+            </div>
+        </div>
+        
+        <div id="contact">
+            <p id="h8" class="h3"><u>Contact</u></p>
+            <form action="process-form.php" class="form" method="POST">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" style="border-radius:10px; font-size:20px; text-align: center;"  placeholder="Enter your Name" required>
+                <br><br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" style="border-radius:10px; font-size:20px; text-align: center;"  placeholder="Enter your Email" required>
+                <br><br><br>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" style="border-radius:10px; font-size:20px; text-align: center;" placeholder="Enter the Message" required></textarea>
+                <br><br><br>
+                <button type="submit" class="sub" style="border-radius:20px; cursor: pointer; font-size:20px; text-align: center;">Submit</button>
+            </form>
+            <p class="con"><u>Contact By</u></p>
+            <p class="share">
+                <a href="https://twitter.com/AmaraneniRithw1" target="_blank" class="fa fa-twitter"></a>
+                &nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/rithwik-amaraneni-6096b5217/" target="_blank" class="fa fa-linkedin"></a>
+                &nbsp;&nbsp;
+                <a href="mailto:amaraneni.rithwik@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                &nbsp;&nbsp;
+                <a href="https://github.com/rithwik003" target="_blank" class="fa fa-github"></a>
+                &nbsp;&nbsp;
+                <a href="https://leetcode.com/rithwik003/" target="_blank" class="fa-leetcode"><img class="im" src="leetcode.svg"> </a>
+            </p>
+            
+        </div>
+    </body>
+</html>
