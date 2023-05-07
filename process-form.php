@@ -1,4 +1,5 @@
 <?php
+/*
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = test_input($_POST["name"]);
   $email = test_input($_POST["email"]);
@@ -33,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-type: text/plain\r\n";
 
     if (mail($to, $subject, $message_body, $headers)) {
-      header("Location: thank-you.php");
+      header("Location: index.html");
       exit;
     } else {
       $messageErr = "There was an error sending your message. Please try again later.";
@@ -47,5 +48,32 @@ function test_input($data) {
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
-}
+}*/
+
+
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $message = htmlspecialchars($_POST['message']);
+
+  if(!empty($email) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $receiver = "amaraneni.rithwik@gmail.com";
+      $subject = "New message from your portfolio website";
+      $body = "Name: $name\nEmail: $email\n\nMessage:\n$message\n\n\n\nRegards,\n$name";
+      $sender = "From: $email";
+      if(mail($receiver, $subject, $body, $sender)){
+         echo "Your message has been sent";
+      }else{
+         echo "Sorry, failed to send your message!";
+      }
+    }else{
+      echo "Enter a valid email address!";
+    }
+  }else{
+    echo "Email and message field is required!";
+  }
+
+
+
+
 ?>
