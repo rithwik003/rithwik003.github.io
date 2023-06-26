@@ -52,26 +52,30 @@ function test_input($data) {
 
 
   $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $message = htmlspecialchars($_POST['message']);
+$email = htmlspecialchars($_POST['email']);
+$message = htmlspecialchars($_POST['message']);
 
-  if(!empty($email) && !empty($message)){
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "amaraneni.rithwik@gmail.com";
-      $subject = "New message from your portfolio website";
-      $body = "Name: $name\nEmail: $email\n\nMessage:\n$message\n\n\n\nRegards,\n$name";
-      $sender = "From: $email";
-      if(mail($receiver, $subject, $body, $sender)){
-         echo "Your message has been sent";
-      }else{
-         echo "Sorry, failed to send your message!";
-      }
-    }else{
-      echo "Enter a valid email address!";
+if (!empty($email) && !empty($message)) {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $filename = 'messages.txt';
+        date_default_timezone_set('Asia/Kolkata'); // Replace 'Your/Timezone' with your actual timezone
+        $content = "Date: " . date('d F Y h:i:s A') . "\n";
+        $content .= "Name: $name\n";
+        $content .= "Email: $email\n";
+        $content .= "Message: $message\n\n";
+
+        // Save the message to a file
+        if (file_put_contents($filename, $content, FILE_APPEND | LOCK_EX) !== false) {
+            echo "Your message has been sent successfully.";
+        } else {
+            echo "Failed to send the message.";
+        }
+    } else {
+        echo "Enter a valid email address!";
     }
-  }else{
-    echo "Email and message field is required!";
-  }
+} else {
+    echo "Email and message fields are required!";
+}
 
 
 
